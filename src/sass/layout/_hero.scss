@@ -8,6 +8,14 @@
     &--gap {
       padding: 30px 0;
     }
+    &-decorator {
+      z-index: 100;
+      display: block;
+      border-radius: 50%;
+      min-height: 86px;
+      width: 328px;
+      border: 2px solid #2cd7cb;
+    }
   }
   &__sub-title {
     font-weight: 400;
@@ -35,19 +43,9 @@
     }
   }
 }
-.decorator {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  display: block;
-  border-radius: 50%;
-  min-height: 86px;
-  width: 328px;
-  border: 2px solid #2cd7cb;
-}
-.decorator-container {
-  position: relative;
-  display: block;
-  min-height: 86px;
-}
+
+// .decorator-container {
+//   position: relative;
+//   display: block;
+//   min-height: 86px;
+// }
