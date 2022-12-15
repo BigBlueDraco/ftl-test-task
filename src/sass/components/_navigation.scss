@@ -8,8 +8,19 @@
     align-items: center;
     gap: 100px;
   }
-  &__item {
+
+  &__link {
+    color: var(--font-media-color);
+    transition: color var(--shift);
+    &:hover,
+    &:focus {
+      color: var(--font-accent-color);
+    }
   }
   &__link {
+    &--active {
+      cursor: default;
+      color: var(--font-accent-color);
+    }
   }
 }
