@@ -1,9 +1,11 @@
 .navigation {
+  display: flex;
 }
 .navigation {
   &__list {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 100px;
   }
   &__item {
