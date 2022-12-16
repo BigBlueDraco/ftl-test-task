@@ -15,11 +15,14 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
   amount = document.getElementsByClassName('slide').length;
   // get the width of the container
-  moveOffset = parseInt(
-    window.getComputedStyle(document.getElementById('carousel-container'))
-      .width,
-    10
-  );
+  moveOffset =
+    parseInt(
+      window.getComputedStyle(document.getElementById('carousel-container'))
+        .width,
+      10
+    ) /
+      4 +
+    20;
   // calcuate the width of the carousel
   document.getElementById('carousel').style.width = amount * moveOffset + 'px';
   // prevent multiple click when transition
@@ -42,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
   document
     .getElementById('carousel')
     .insertBefore(
-      document.getElementById('carousel').children[4],
+      document.getElementById('carousel').children[1],
       document.getElementById('carousel').children[0]
     );
   // add click events to control arrows
@@ -92,3 +95,5 @@ function next() {
     currTransl[outerIndex] = currTransl[outerIndex] + moveOffset * amount;
   }
 }
+
+setInterval(next, 2000);
