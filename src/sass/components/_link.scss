@@ -1,0 +1,6 @@
+.link {
+  transition: all --shift;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
