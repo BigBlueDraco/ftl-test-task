@@ -1,0 +1,47 @@
+.about {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+  }
+  &__list-item {
+    display: flex;
+    justify-content: space-between;
+    // gap: 180px;
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+  }
+  &__img {
+    display: block;
+    width: 620px;
+  }
+  &__text-wraper {
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+  }
+
+  &__link {
+    text-align: right;
+    color: var(--font-accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  &__svg {
+    width: 140px;
+  }
+  &__shops-wraper {
+    display: flex;
+    gap: 20px;
+  }
+  &__svg-arrow {
+    width: 26px;
+    height: 26px;
+    fill: var(--font-accent-color);
+  }
+}
