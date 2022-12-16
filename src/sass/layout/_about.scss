@@ -6,7 +6,8 @@
   }
   &__list-item {
     display: flex;
-    gap: 180px;
+    justify-content: space-between;
+    // gap: 180px;
     &:nth-child(odd) {
       flex-direction: row-reverse;
     }
@@ -16,7 +17,7 @@
     width: 620px;
   }
   &__text-wraper {
-    width: 455px;
+    width: 460px;
     display: flex;
     flex-direction: column;
 
@@ -26,5 +27,21 @@
   &__link {
     text-align: right;
     color: var(--font-accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  &__svg {
+    width: 140px;
+  }
+  &__shops-wraper {
+    display: flex;
+    gap: 20px;
+  }
+  &__svg-arrow {
+    width: 26px;
+    height: 26px;
+    fill: var(--font-accent-color);
   }
 }
