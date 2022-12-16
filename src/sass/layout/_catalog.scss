@@ -1,0 +1,38 @@
+.catalog {
+  &__title {
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+  }
+  &__list-item {
+    max-width: 70px;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+  &__icon-bg {
+    min-width: 70px;
+    height: 70px;
+    background-color: var(--background-icons-color);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__svg {
+    fill: black;
+
+    width: 32px;
+    height: 32px;
+    &--music {
+      stroke: black;
+    }
+  }
+}
