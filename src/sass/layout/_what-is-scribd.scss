@@ -1,0 +1,23 @@
+.what-is-scribd {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  //   gap: 180px;
+}
+.what-is-scribd {
+  &__img {
+    flex-basis: 620px;
+    width: 620px;
+    height: 295px;
+  }
+  &__text-wraper {
+    flex-basis: 465px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  &__title {
+    font-size: 54px;
+    line-height: 105%;
+  }
+}
