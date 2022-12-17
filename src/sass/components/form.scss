@@ -1,0 +1,21 @@
+.form {
+  &__label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    color: #2a3036;
+  }
+  &__input {
+    padding: 20px;
+    border-color: transparent;
+    background: #f8f8f8;
+    border-radius: 10px;
+    &::placeholder {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 150%;
+      color: #95989b;
+    }
+  }
+}

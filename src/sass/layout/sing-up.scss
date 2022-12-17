@@ -1,0 +1,46 @@
+.sing-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-form-color);
+  padding-top: 28px;
+  padding-bottom: 12px;
+}
+.sing-up {
+  &__title {
+    text-align: center;
+  }
+  &__sub-title {
+    text-align: center;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 480px;
+    margin: auto;
+  }
+  &__label {
+    width: 480px;
+  }
+  &__btn {
+    width: 480px;
+  }
+  &__btn--google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 28px 0;
+  }
+  &__link {
+    color: #2cd7cb;
+  }
+  &__text {
+    color: #000000;
+  }
+}
