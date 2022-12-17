@@ -16,6 +16,13 @@
     display: flex;
     justify-content: center;
     gap: 90px;
+    @include mq(not-desk) {
+      flex-wrap: wrap;
+      gap: 180px;
+    }
+    @include mq(mob-only) {
+      gap: 120px;
+    }
   }
   &__list-item {
     max-width: 70px;

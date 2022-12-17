@@ -32,5 +32,8 @@
   &__iframe {
     width: 620px;
     height: 350px;
+    @include mq(not-desk) {
+      width: 100%;
+    }
   }
 }
