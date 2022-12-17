@@ -1,0 +1,51 @@
+.footer {
+  background-color: var(--background-footer-color);
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.footer {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list-item {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    color: var(--font-media-color);
+    padding-bottom: 20px;
+  }
+  &__svg {
+    width: 140px;
+    height: 42px;
+  }
+}
+
+.leagal-list {
+  display: flex;
+  flex-direction: column;
+}
+.app-list {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 300px;
+  &__item {
+    color: var(--font-media-color);
+  }
+  &__link {
+    display: flex;
+    gap: 15px;
+  }
+  &__svg {
+    width: 20px;
+    height: 20px;
+  }
+}
