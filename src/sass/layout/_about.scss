@@ -7,14 +7,24 @@
   &__list-item {
     display: flex;
     justify-content: space-between;
-    // gap: 180px;
-    &:nth-child(odd) {
-      flex-direction: row-reverse;
+    @include mq(desk) {
+      &:nth-child(odd) {
+        flex-direction: row-reverse;
+      }
+    }
+    @include mq(not-desk) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      // text-align: center;
     }
   }
   &__img {
     display: block;
     width: 620px;
+    @include mq(not-desk) {
+      width: 100%;
+    }
   }
   &__text-wraper {
     width: 460px;
@@ -22,6 +32,10 @@
     flex-direction: column;
 
     justify-content: space-between;
+
+    @include mq(not-desk) {
+      width: 100%;
+    }
   }
 
   &__link {

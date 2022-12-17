@@ -2,6 +2,11 @@
   padding-bottom: 100px;
 }
 .section {
+  &--bestsellers {
+    @include mq(not-desk) {
+      display: none;
+    }
+  }
   &--hero {
     padding-bottom: 170px;
   }
