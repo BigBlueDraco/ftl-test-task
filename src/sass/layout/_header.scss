@@ -9,4 +9,22 @@
     align-items: center;
     gap: 200px;
   }
+  &__img {
+    width: 100%;
+    max-width: none;
+    @include mq(mob) {
+      width: 250px;
+    }
+    @include mq(tab) {
+      width: 250px;
+    }
+    @include mq(desk) {
+      width: 200px;
+    }
+  }
+  &__nav {
+    @include mq(not-desk) {
+      display: none;
+    }
+  }
 }
